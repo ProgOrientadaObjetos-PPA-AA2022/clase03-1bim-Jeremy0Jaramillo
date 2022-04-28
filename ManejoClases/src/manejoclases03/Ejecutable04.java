@@ -5,6 +5,9 @@
  */
 package manejoclases03;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  *
  * @author reroes
@@ -12,14 +15,21 @@ package manejoclases03;
 public class Ejecutable04 {
     
     public static void main(String[] args) {
-    
+    Scanner entry = new Scanner (System.in);
+    entry.useLocale(Locale.US);
+        
         Hospital h1 = new Hospital();
         Hospital h2 = new Hospital();
         Hospital h3 = new Hospital();
         
-        double valor1 = 10000;
-        double valor2 = 20000;
-        double valor3 = 30000;
+        System.out.println("Ingrese el monto del presupuesto del hospital 1");
+        double valor1 = entry.nextInt();
+        
+        System.out.println("Ingrese el monto del presupuesto del hospital 1");
+        double valor2 = entry.nextInt();
+        
+        System.out.println("Ingrese el monto del presupuesto del hospital 1");
+        double valor3 = entry.nextInt();
         
         h1.establecerPresupuesto(valor1);
         h2.establecerPresupuesto(valor2);

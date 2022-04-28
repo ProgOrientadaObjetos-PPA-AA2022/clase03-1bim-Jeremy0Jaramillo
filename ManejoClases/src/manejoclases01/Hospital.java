@@ -11,3 +11,5 @@ public class Hospital {
     int numeroCamas;
     double presupuesto;
 }
+
+
